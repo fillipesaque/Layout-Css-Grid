@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="arquivo.css" />
+    <title>Layouts Css Grid/Flex</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="">Logo</a>
+      <!-- Botão do menu sanduíche -->
+      <button class="menu-toggle" aria-label="Abrir menu">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul>
+          <li><a>Home</a></li>
+          <li><a>Sobre</a></li>
+          <li><a>Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1>Primeiro Layout Css/FlexBox</h1>
+
+    <section class="flex1">
+      <div>
+        <img src="./assets/lobo1.jpg" alt="" />
+        <p>Legenda</p>
+      </div>
+      <div>
+        <img src="./assets/lobo2.jpg" alt="" />
+        <p>Legenda</p>
+      </div>
+      <div>
+        <img src="./assets/lobo3.jpg" alt="" />
+        <p>Legenda</p>
+      </div>
+      <div>
+        <img src="./assets/lobo2.jpg" alt="" />
+        <p>Legenda</p>
+      </div>
+      <div>
+        <img src="./assets/lobo1.jpg" alt="" />
+        <p>Legenda</p>
+      </div>
+      <div>
+        <img src="./assets/lobo3.jpg" alt="" />
+        <p>Legenda</p>
+      </div>
+    </section>
+
+    <h1>Segundo Layout Css/Grid</h1>
+
+    <section class="grid1">
+      <div>
+        <img src="./assets/lobo1.jpg" alt="" />
+        <p>Legenda</p>
+      </div>
+      <div>
+        <img src="./assets/lobo2.jpg" alt="" />
+        <p>Legenda</p>
+      </div>
+      <div>
+        <img src="./assets/lobo3.jpg" alt="" />
+        <p>Legenda</p>
+      </div>
+      <div>
+        <img src="./assets/lobo1.jpg" alt="" />
+        <p>Legenda</p>
+      </div>
+      <div>
+        <img src="./assets/lobo1.jpg" alt="" />
+        <p>Legenda</p>
+      </div>
+      <div>
+        <img src="./assets/lobo2.jpg" alt="" />
+        <p>Legenda</p>
+      </div>
+      <div>
+        <img src="./assets/lobo3.jpg" alt="" />
+        <p>Legenda</p>
+      </div>
+      <div>
+        <img src="./assets/lobo1.jpg" alt="" />
+        <p>Legenda</p>
+      </div>
+      <div>
+        <img src="./assets/lobo1.jpg" alt="" />
+        <p>Legenda</p>
+      </div>
+      <div class="anuncio">
+        <img src="./assets/lobo2.jpg" alt="" />
+        <p>Anuncio</p>
+      </div>
+    </section>
+
+    <h1>Terceiro Layout Css/Grid</h1>
+
+    <section class="grid2">
+      <div class="video">
+        <img src="./assets/lobo1.jpg" alt="" />
+        <p>Video</p>
+      </div>
+      <div class="sidebar">
+        <div class="anuncio">
+          <img src="./assets/lobo2.jpg" alt="" />
+          <p>Video</p>
+        </div>
+        <div>
+          <img src="./assets/lobo3.jpg" alt="" />
+          <p>Video</p>
+        </div>
+        <div>
+          <img src="./assets/lobo1.jpg" alt="" />
+          <p>Video</p>
+        </div>
+        <div>
+          <img src="./assets/lobo2.jpg" alt="" />
+          <p>Video</p>
+        </div>
+      </div>
+    </section>
+
+    <h1>Quarto Layout Css/Grid</h1>
+    <section class="grid3">
+      <div class="grid3-item">
+        <img src="./assets/lobo4.jpg" alt="" />
+        <p>Legenda Imagem</p>
+      </div>
+      <div class="grid3-item">
+        <img src="./assets/lobo1.jpg" alt="" />
+        <p>Legenda Imagem</p>
+      </div>
+      <div class="grid3-item">
+        <img src="./assets/lobo2.jpg" alt="" />
+        <p>Legenda Imagem</p>
+      </div>
+    </section>
+  </body>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.header .nav');
+
+    menuToggle.addEventListener('click', function () {
+        nav.classList.toggle('active'); // Alterna a classe 'active' no menu
+    });
+});
+  </script>
+</html>
